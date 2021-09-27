@@ -34,7 +34,9 @@ public class XO_Dot {
             }
         }
         System.out.println("Игра закончена");
-    }
+    } 
+    // Вместо if делаем проверку на выйгрыш циклом for
+    
     public static boolean checkWin(char dot) {
 
             for (int i = 0; i < 3; i++)
@@ -50,6 +52,7 @@ public class XO_Dot {
                 return true;
             return false;
         }
+        // Ниже закомментирована проверка if-ами
         //if(map[0][0] == symb && map[0][1] == symb && map[0][2] == symb) return true;
         //if(map[1][0] == symb && map[1][1] == symb && map[1][2] == symb) return true;
         //if (map[2][0] == symb && map[2][1] == symb && map[2][2] == symb) return true;
